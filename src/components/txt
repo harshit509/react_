@@ -1,0 +1,29 @@
+state->a set of data that only individual component hold
+props->props is something that i need to pass data form one component to another
+
+LIFE CYCLE MODEL
+mount=mount is initialy rendering in dom
+update=update the mount
+unmount=removing from dom
+
+
+mounting phase
+we have componentdidmount->its something which is used as side ways. It fetch data from external api's 
+that we have created in backend then we  rendered it through component simply.
+
+
+FLOW
+CONSTRUCTOR->RENDER->COMPONETNDIDMOUNT
+
+
+
+2.updating
+static getDerivedStateFromsProps(props,state)->null or new object
+ShouldcomponentUpdate(props,state)->true or false
+render()
+getSnapShotBeforeUpdate(prevprops,prevstate)->true or false
+componentdidupdate()
+
+
+3.unmounting
+componentWillUnmount()
